@@ -12,7 +12,7 @@ import java.util.Scanner;
 public class AddressBookController {
 
 
-    public static void main(String[] args) {
+    public ArrayList<Contact>addbook(){
         Scanner scanner = new Scanner(System.in);
         ArrayList<Contact> arrayList = new ArrayList<Contact>();
 
@@ -53,6 +53,6 @@ public class AddressBookController {
                     break;
             }
         }
-
+        return arrayList;
     }
 }
