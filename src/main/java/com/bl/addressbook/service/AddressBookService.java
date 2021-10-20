@@ -2,7 +2,6 @@ package com.bl.addressbook.service;
 
 import com.bl.addressbook.models.Contact;
 
-import java.awt.List;
 import java.util.*;
 
 public class AddressBookService {
@@ -143,6 +142,31 @@ public class AddressBookService {
                 break;
             }
         }while(true);
+
+
     }
+    //      public void viewCity();
+    //      {
+    //          System.out.println("Enter the City or State");
+    //        String  cityOrState = scanner.nextLine();
+    //          arrayList.stream()
+    //                 .map(Contact::getCity)
+    //                 .distinct()
+    //               .forEach(System.out::println);
+//
+
+    //      }
+
+
+    public void viewCity(){
+        System.out.println("Enter the City or State");
+        String  cityOrState = scanner.nextLine();
+        ArrayList<Object> contactList1 = new ArrayList<Object>();
+        arrayList.stream()
+                .map(Contact::getCity)
+                .distinct()
+                .forEach(System.out::println);
+    }
+
 
 }
