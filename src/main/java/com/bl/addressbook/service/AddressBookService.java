@@ -142,7 +142,7 @@ public class AddressBookService {
                 }
                 break;
             }
-        }while();
+        }while(true);
     }
 
 }
