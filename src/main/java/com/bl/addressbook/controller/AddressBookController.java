@@ -21,6 +21,8 @@ public class AddressBookController {
 
         AddressBookService addbook = new AddressBookService();
 
+        Scanner consoleInputReader = new Scanner(System.in);
+
 
         while (flag) {
 
@@ -49,6 +51,12 @@ public class AddressBookController {
                     System.out.println("________________");
                     break;
                 case 6:
+                    addbook.readEmployeePayrollData(consoleInputReader);
+                    break;
+                case 7:
+                    addbook.writeEmployeePayrollData();
+
+                case 8:
                     flag = false;
                     break;
             }
