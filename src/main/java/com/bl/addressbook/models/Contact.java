@@ -1,13 +1,23 @@
 package com.bl.addressbook.models;
 
+import com.opencsv.bean.CsvBindByName;
+
 public class Contact {
+    @CsvBindByName
     private String firstName;
+    @CsvBindByName
     private String lastName;
+    @CsvBindByName
     private String address;
+    @CsvBindByName
     private String city;
+    @CsvBindByName
     private String state;
+    @CsvBindByName
     private String zipCode;
+    @CsvBindByName
     private String mobileNo;
+    @CsvBindByName
     private String  emailId;
 
 
